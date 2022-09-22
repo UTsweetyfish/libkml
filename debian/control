@@ -1,0 +1,134 @@
+Source: libkml
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Francesco Paolo Lovergine <frankie@debian.org>,
+           Bas Couwenberg <sebastic@debian.org>
+Section: science
+Priority: optional
+Build-Depends: debhelper (>= 10~),
+               cmake,
+               libboost-dev,
+               libcurl4-gnutls-dev | libcurl-ssl-dev,
+               libexpat1-dev,
+               libminizip-dev,
+               liburiparser-dev (>= 0.7.1),
+               pkg-kde-tools,
+               zlib1g-dev
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/debian-gis-team/libkml
+Vcs-Git: https://salsa.debian.org/debian-gis-team/libkml.git
+Homepage: https://github.com/libkml/libkml
+
+Package: libkmlbase1
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Library to manipulate KML 2.2 OGC standard files - libkmlbase
+ This is a library for use with applications that want to parse,
+ generate and operate on KML, a geo-data XML variant. It is an
+ implementation of the OGC KML 2.2 standard. It is written in C++ and
+ bindings are available via SWIG to Java and Python.
+ .
+ This package contains the libkmlbase shared library.
+
+Package: libkmlconvenience1
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Library to manipulate KML 2.2 OGC standard files - libkmlconvenience
+ This is a library for use with applications that want to parse,
+ generate and operate on KML, a geo-data XML variant. It is an
+ implementation of the OGC KML 2.2 standard. It is written in C++ and
+ bindings are available via SWIG to Java and Python.
+ .
+ This package contains the libkmlconvenience shared library.
+
+Package: libkmldom1
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Library to manipulate KML 2.2 OGC standard files - libkmldom
+ This is a library for use with applications that want to parse,
+ generate and operate on KML, a geo-data XML variant. It is an
+ implementation of the OGC KML 2.2 standard. It is written in C++ and
+ bindings are available via SWIG to Java and Python.
+ .
+ This package contains the libkmldom shared library.
+
+Package: libkmlengine1
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Library to manipulate KML 2.2 OGC standard files - libkmlengine
+ This is a library for use with applications that want to parse,
+ generate and operate on KML, a geo-data XML variant. It is an
+ implementation of the OGC KML 2.2 standard. It is written in C++ and
+ bindings are available via SWIG to Java and Python.
+ .
+ This package contains the libkmlengine shared library.
+
+Package: libkmlregionator1
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Library to manipulate KML 2.2 OGC standard files - libkmlregionator
+ This is a library for use with applications that want to parse,
+ generate and operate on KML, a geo-data XML variant. It is an
+ implementation of the OGC KML 2.2 standard. It is written in C++ and
+ bindings are available via SWIG to Java and Python.
+ .
+ This package contains the libkmlregionator shared library.
+
+Package: libkmlxsd1
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Library to manipulate KML 2.2 OGC standard files - libkmlxsd
+ This is a library for use with applications that want to parse,
+ generate and operate on KML, a geo-data XML variant. It is an
+ implementation of the OGC KML 2.2 standard. It is written in C++ and
+ bindings are available via SWIG to Java and Python.
+ .
+ This package contains the libkmlxsd shared library.
+
+Package: libkml-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libkmlbase1 (= ${binary:Version}),
+         libkmlconvenience1 (= ${binary:Version}),
+         libkmldom1 (= ${binary:Version}),
+         libkmlengine1 (= ${binary:Version}),
+         libkmlregionator1 (= ${binary:Version}),
+         libkmlxsd1 (= ${binary:Version}),
+         libminizip-dev,
+         liburiparser-dev (>= 0.7.1),
+         libboost-dev,
+         libexpat1-dev,
+         zlib1g-dev,
+         ${misc:Depends}
+Description: Library to manipulate KML 2.2 OGC standard files - development files
+ This is a library for use with applications that want to parse,
+ generate and operate on KML, a geo-data XML variant. It is an
+ implementation of the OGC KML 2.2 standard. It is written in C++ and
+ bindings are available via SWIG to Java and Python.
+ .
+ This package contains files required to build C/C++ programs which use
+ the KML library.

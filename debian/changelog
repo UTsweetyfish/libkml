@@ -1,0 +1,410 @@
+libkml (1.3.0-9) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.5.0, no changes.
+  * Drop Name field from upstream metadata.
+  * Bump debhelper compat to 10, changes:
+    - Drop --parallel option, enabled by default
+  * Bump watch file version to 4.
+  * Update lintian overrides.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 11 Nov 2020 18:37:55 +0100
+
+libkml (1.3.0-8) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.4.0, no changes.
+  * Update watch file to limit matches to archive path.
+  * Add Build-Depends-Package field to symbols files.
+  * Remove package name from lintian overrides.
+  * Don't build swig bindings.
+  * Update symbols for amd64.
+  * Update gbp.conf to use --source-only-changes by default.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 11 Jul 2019 15:49:40 +0200
+
+libkml (1.3.0-7) unstable; urgency=medium
+
+  * Drop autopkgtest to test installability.
+  * Add lintian override for testsuite-autopkgtest-missing.
+  * Add patch to fix wrong-path-for-interpreter lintian issue.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 31 Jul 2018 19:59:24 +0200
+
+libkml (1.3.0-6) unstable; urgency=medium
+
+  * Strip trailing whitespace from changelog, control & rules files.
+  * Update copyright-format URL to use HTTPS.
+  * Fix deprecated source override location.
+  * Update Vcs-* URLs for Salsa.
+  * Bump Standards-Version to 4.1.5, no changes.
+  * Drop obsolete get-orig-source target.
+  * Drop ancient X-Python-Version field.
+  * Update symbols for amd64.
+  * Add lintian override for bad-jar-name.
+  * Add upstream metadata.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 20 Jul 2018 07:23:12 +0200
+
+libkml (1.3.0-5) unstable; urgency=medium
+
+  * Apply patch by Chris Lamb to fix find call.
+    (closes: #876721)
+  * Bump Standards-Version to 4.1.0, no changes.
+  * Add lintian override for python-foo-but-no-python3-foo.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 25 Sep 2017 18:18:22 +0200
+
+libkml (1.3.0-4) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.0.0, no changes.
+  * Add autopkgtest to test installability.
+  * Enable PIE hardening buildflags.
+  * Use pkg-info.mk variables instead of dpkg-parsechangelog output.
+  * Update symbols for other architectures.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 25 Jun 2017 18:28:45 +0200
+
+libkml (1.3.0-3) unstable; urgency=medium
+
+  * Fix typo in dh_python2 override.
+  * Drop unused override for incompatible-java-bytecode-format.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 25 Aug 2016 11:51:50 +0200
+
+libkml (1.3.0-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.8, no changes.
+  * Enable bindnow hardening buildflags.
+  * Add lintian override for incompatible-java-bytecode-format.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 17 Apr 2016 16:04:28 +0200
+
+libkml (1.3.0-1) unstable; urgency=medium
+
+  * Update symbols for other architectures.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 24 Dec 2015 03:10:36 +0100
+
+libkml (1.3.0-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Include CMake files in libkml-dev.
+  * Update symbols for amd64.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 23 Dec 2015 11:31:36 +0100
+
+libkml (1.3.0~rc2-2) unstable; urgency=medium
+
+  * Update symbols for other architectures.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 03 Dec 2015 11:46:38 +0100
+
+libkml (1.3.0~rc2-1) unstable; urgency=medium
+
+  * Update symbols for other architectures.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 03 Dec 2015 00:11:34 +0100
+
+libkml (1.3.0~rc2-1~exp1) experimental; urgency=medium
+
+  * New upstream release candidate.
+  * Drop install-headers.patch, applied upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 01 Dec 2015 23:24:28 +0100
+
+libkml (1.3.0~rc1-1~exp2) experimental; urgency=medium
+
+  * Add patch to install kml/dom/xsd.h again, required for kml22.h.
+  * Update symbols for other architectures.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 26 Nov 2015 01:05:46 +0100
+
+libkml (1.3.0~rc1-1~exp1) experimental; urgency=medium
+
+  * New upstream release candidate.
+  * Drop patches, applied upstream.
+  * Update Vcs-Browser URL to use HTTPS.
+  * Update symbols for amd64.
+  * Drop explicit build dependencies on GCC 5.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 25 Nov 2015 01:43:07 +0100
+
+libkml (1.3.0~rc0-3) unstable; urgency=medium
+
+  * Add required build dependencies to libkml-dev dependencies:
+    libboost-dev, libexpat1-dev & zlib1g-dev in addition to
+    libminizip-dev & liburiparser-dev.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 20 Aug 2015 16:17:37 +0200
+
+libkml (1.3.0~rc0-2) unstable; urgency=medium
+
+  * Update symbols for other architectures.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 19 Aug 2015 13:12:41 +0200
+
+libkml (1.3.0~rc0-1) unstable; urgency=medium
+
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 18 Aug 2015 14:27:03 +0200
+
+libkml (1.3.0~rc0-1~exp2) experimental; urgency=medium
+
+  * Update symbols for other architectures.
+  * Use uscan instead of custom script in get-orig-source target.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 03 Aug 2015 13:57:01 +0200
+
+libkml (1.3.0~rc0-1~exp1) experimental; urgency=medium
+
+  * Update watch file to support pre-releases.
+  * New upstream release candidate.
+  * Drop patches, applied upstream.
+  * Update symbols for amd64.
+  * Add patch to fix pkgconfig install path.
+  * Include libkml.pc in libkml-dev.
+  * Add patch to fix SWIG Java library install path.
+  * Include SWIG Java libraries in libkml-java.
+  * Add patch to install the SWIG Java libraries in a JNI specific path.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 02 Aug 2015 17:42:39 +0200
+
+libkml (1.3.0~r864+git20150726-3f3f37f-1~exp3) experimental; urgency=medium
+
+  * Update symbols for other architectures.
+  * Replace uppercase RC with lowercase rc in uversionmangle.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 29 Jul 2015 18:38:02 +0200
+
+libkml (1.3.0~r864+git20150726-3f3f37f-1~exp2) experimental; urgency=medium
+
+  * Don't excluded python-kml from dh_makeshlibs.
+  * Fix python-kml shlibs dependencies.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 27 Jul 2015 01:22:53 +0200
+
+libkml (1.3.0~r864+git20150726-3f3f37f-1~exp1) experimental; urgency=medium
+
+  * New upstream git snapshot.
+    - Re-enable swig bindings
+  * Drop patches applied upstream.
+  * Add path to fix Python library installation path.
+  * Update symbols for amd64 with GCC 5.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 27 Jul 2015 00:06:36 +0200
+
+libkml (1.3.0~r864+git20150723-0fa2f22-1~exp2) experimental; urgency=medium
+
+  * Update install-paths.patch with upstream changes to fix header installation.
+  * Don't include build files for examples.
+  * Install docs in all packages.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 26 Jul 2015 01:33:34 +0200
+
+libkml (1.3.0~r864+git20150723-0fa2f22-1~exp1) experimental; urgency=medium
+
+  * Add libcurl-ssl-dev as alternative for libcurl-gnutls-dev build dependency.
+  * Change upstream from google to libkml on GitHub.
+  * New upstream git snapshot.
+  * Drop Files-Excluded from copyright & repacksuffix from watch file,
+    third party sources no longer included.
+  * Switch build system from autotools to cmake.
+  * Drop automake related patches, refresh remaining patch.
+  * Add patch to fix FTBFS due to ; separated compiler flags.
+  * Add patch to fix SOVERSION from MAJOR.MINOR to MARJOR.
+  * Rename library package to incorporate SONAME bump.
+  * Add patch to support Multi-Arch library install path.
+  * Update docs for README.md rename.
+  * Update copyright file, drop removed third party license & copyright.
+  * Drop libkml-java & python-kml packages, swig bindings no longer build.
+  * Split libkml into separate packages per library,
+    add symbols files with pkgkde-symbolshelper.
+  * Add explicit build dependencies on GCC 5.2.
+  * Update symbols for amd64 with GCC 5.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 25 Jul 2015 21:27:26 +0200
+
+libkml (1.3.0~r864+git20131113-9b50572+dfsg1-1) unstable; urgency=medium
+
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 27 Apr 2015 11:24:49 +0200
+
+libkml (1.3.0~r864+git20131113-9b50572+dfsg1-1~exp1) experimental; urgency=medium
+
+  * Switch upstream source from code.google.com to GitHub.
+  * Merge changes from upstream git repository.
+  * Update copyright file, changes:
+    - Replace third_party/googletest-r108 with third_party/gtest-1.7.0
+    - Drop config/ltmain.sh, removed upstream
+    - Group Boost copyright statements by license
+    - Group zlib copyright statments by license
+    - Use GPL-{2,3}+ instead of SPDX short name with .0.
+  * Update patches for upstream changes.
+  * Update Vcs-Browser URL to use cgit instead of gitweb.
+  * Bump Standards-Version to 3.9.6, no changes.
+  * Add dh-python to build dependencies.
+  * Also exclude useless prebuilt Windows binaries from upstream source.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 13 Mar 2015 01:42:43 +0100
+
+libkml (1.3.0~r864+dfsg-1) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.5, no changes required.
+  * Repack upstream tarball removing the IETF RFCs included by thirdparty
+    uriparser documentation.
+    (closes: #745403)
+  * Add gbp.conf to use pristine-tar by default.
+  * Enable parallel builds.
+
+ -- Bas Couwenberg <sebastic@xs4all.nl>  Tue, 22 Apr 2014 15:31:54 +0200
+
+libkml (1.3.0~r864-2) unstable; urgency=low
+
+  * No Multi-Arch: same for java package, jar contains SWIG generated code.
+    (closes: #728785)
+  * Change Priority to optional.
+
+ -- Bas Couwenberg <sebastic@xs4all.nl>  Sun, 10 Nov 2013 01:40:38 +0100
+
+libkml (1.3.0~r864-1) unstable; urgency=low
+
+  * Merge upstream commit r864:
+    Allow colors to have leading whitespace, with or without '#'.
+  * Add myself to Uploaders.
+  * Update swig.diff to also disable the SWIG version check in configure.ac.
+    Thanks Ilya Barygin for the patch.
+  * Update ld-as-needed.diff to fix FTBFS with --as-needed.
+    Thanks Ilya Barygin for the patch.
+    (closes: #692055)
+  * Add hurd.diff to fix FTBFS on hurd-i386.
+    Thanks Pino Toscano for the patch.
+    (closes: #671894)
+  * Refresh patches.
+  * Use canonical URLs for Vcs-* fields.
+  * Don't start short description with an article.
+  * Drop XB-Python-Version from control file.
+  * Add a watch file.
+  * Add patch to fix executable-not-elf-or-script for java run.sh example.
+  * Add lintian override for no fortify functions false positive.
+  * Drop needless dependency on default-jre for libkml-java.
+  * Move .so symlinks from java packages to libkml-dev.
+  * Update copyright file using copyright-format 1.0.
+  * Add lintian override for source-contains-prebuilt-windows-binary.
+  * Use minimal dh rules, handle Multi-Arch paths.
+  * Use dh-autoreconf for retooling.
+  * Add patch to set subdir-objects automake option for forward compatibility.
+  * Add patch to fix linking libtool libraries using a non-POSIX archiver.
+  * Add patch to not build examples, msvc and xcode subprojects.
+  * Add lintian override for incompatible-java-bytecode-format.
+  * Add patch headers for all patches.
+  * Bump Standards-Version to 3.9.4, changes: Vcs-* fields, copyright,
+    minimal dh rules.
+  * Build depend on libcurl4-gnutls-dev instead of libcurl4-openssl-dev.
+  * Also install libminizip headers.
+
+ -- Bas Couwenberg <sebastic@xs4all.nl>  Sat, 05 Oct 2013 21:15:09 +0200
+
+libkml (1.3.0~r863-4.1) unstable; urgency=low
+
+  * Non maintainer upload.
+  * Fix build failure with GCC 4.7.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 17 Apr 2012 07:59:06 +0200
+
+libkml (1.3.0~r863-4) unstable; urgency=low
+
+  * Added liburiparser-dev to libkml-dev.
+  * Moved to dh_python2 instead of python-central.
+  * Policy bumped to 3.9.3, no changes required.
+  * Debhelper level set to 9.
+  * Refreshed reautoconfiscated.diff to remove a backup file. Thanks doko.
+    (closes: #650525)
+  * The ld-as-needed case has been already managed.
+    (closes: #641681)
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Wed, 14 Mar 2012 13:29:51 +0100
+
+libkml (1.3.0~r863-3) unstable; urgency=low
+
+  * Added swig patch to remove a wrong swig version test.
+    (closes: #634528)
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Tue, 26 Jul 2011 11:07:30 +0200
+
+libkml (1.3.0~r863-2) unstable; urgency=low
+
+  * New patch geometry_test.diff to remove another failing test.
+    (closes: #626259)
+  * Policy bumped to 3.9.2, no changes needed.
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Wed, 08 Jun 2011 11:19:48 +0200
+
+libkml (1.3.0~r863-1) unstable; urgency=low
+
+  * New upstream snapshot for 1.3 series, as taken from svn.
+  * Patchset updated for current release.
+  * New patch feature_view_test.diff to remove a failing test.
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Tue, 29 Mar 2011 16:41:45 +0200
+
+libkml (1.2.0-2) unstable; urgency=low
+
+  * Moved to git repository and changed Vcs-* fields in debian/control.
+  * Changed to debian source 3.0.
+  * Debhelper level set to 8.
+  * Wrapped debian/changelog to 80 chars.
+  * New patch ld-as-needed.diff: it fixes FTBS when --as-needed is used at
+    linking time.
+    (closes: #605889)
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Thu, 24 Mar 2011 21:17:35 +0100
+
+libkml (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Updated automake.diff and reautoconfiscated patches to reflect changes
+    in building scripts. Note that boost is still embedded with old
+    version 1.34.
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Fri, 25 Jun 2010 11:42:15 +0200
+
+libkml (1.1.0-1) unstable; urgency=low
+
+  * New upstream release:
+      o In-memory KMZ read support.
+      o Initial Google Maps Data API support.
+      o Various security fixes, particularly in the underlying Zip library.
+  * Patches refreshed: reautoconfiscated.diff and automake.diff.
+  * NMU ack: incorporate patch from Jakub Wilk to enable building with Python 2.6.
+    (closes: #557288)
+  * Added original copyright from zlib to debian/copyright as originally asked
+    by ftpmasters.
+  * Added kfreebsd.diff top patch to manage GNU/kFreeBSD flavor.
+    (closes: #558208)
+  * Fixed patch ordering.
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Thu, 10 Dec 2009 17:30:39 +0100
+
+libkml (1.0.1-3) unstable; urgency=high
+
+  * Added clone.diff patch to use __clone2() instead of clone() on ia64.
+    This patch solves a FTBS on ia64.
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Tue, 27 Oct 2009 12:24:40 +0100
+
+libkml (1.0.1-2) unstable; urgency=low
+
+  * Added python version overriding at build/installation time.
+    (closes: #550310)
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Tue, 13 Oct 2009 14:04:45 +0200
+
+libkml (1.0.1-1) unstable; urgency=low
+
+  * Initial release.
+    (closes: #548720)
+
+ -- Francesco Paolo Lovergine <frankie@debian.org>  Tue, 29 Sep 2009 11:15:17 +0200
